@@ -24,11 +24,29 @@ namespace PracticeApplication2
             Console.WriteLine("From Method 3");
         }
 
+        //Static method
+        public static void Method4()
+        {
+            Console.WriteLine("From Method 4");
+        }
+
         //Extension Method
-        public string Method4(this string a, string b)
+        public string Method5(this string a, string b)
         {
             Console.WriteLine(a + b);
             return a + b;
+        }
+    }
+
+    public class VarVsDynamic
+    {
+        public VarVsDynamic()
+        {
+            var a = 1;
+            a = "one"; //Cannot be reinitialized to different type.
+
+            dynamic b = 1;
+            b = "one"; // Can be reinitialized to different type.
         }
     }
 
