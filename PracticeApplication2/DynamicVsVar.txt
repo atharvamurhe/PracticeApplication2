@@ -1,0 +1,17 @@
+﻿Dynamic:
+  1)Type of variable is deciced at Runtime.
+  2)Type of variable can be changed dynamically.
+  3)No need to initialized at the time of declaration.
+  4)Compiler does not know the type of value stored at compile time.
+  5)Can be used as property and for return values.
+  6)dynamic val = 1;
+    val = "one";// This will not throw error.
+
+Var:
+  1)Type of variable is deciced at Compile time.
+  2)Type of variable cannot be changed dynamically.
+  3)Needs to initialized at the time of declaration itself.
+  4)Compiler knows the type of value stored at compile time.
+  5)Can be used only as a local variable.
+  6)var val = 1;
+    val = "one"// This will throw an error.
